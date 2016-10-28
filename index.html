@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Live on Twitch</title>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
   <body>
-    <img src="#" alt="Twitch logo">
-    <h1>Twitch-live</h1>
-    <p>Check if the streamers you're following are live</p>
-    <form action="" method="post">
-    <div class="row">
-      <div class="col-md-12">
-      <label for="username">Username:</label><input type="text" name="username" placeholder="Enter username..."><br>
-      <label for="password">Password:</label><input type="password" name="password" placeholder="Enter password..."><br>
-      <input type="submit" value="Log in">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twitch_logo.svg/455px-Twitch_logo.svg.png" alt="twitch logo">
+        </div>
+        <div class="col-md-6" id="loginSection">
+          <h1>Twitch-live <span style="font-size: 15px;">by Forgoroe</span></h1>
+          <p>The up-to-date list of channels you follow.</p>
+          <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" hidden/>
+          <button class="btn btn-default btn-md" id="logout">Log out</button>
+        </div>
       </div>
+  </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="basicInfo">
+        <h2><img src="http://res.cloudinary.com/forgoroe/image/upload/c_scale,w_30/v1477685258/logos/Twitch-Icon.png" alt="" id="userImage"> <span id="user"></span></h2>
+        <h4><i class="fa fa-heart fa-lg" aria-hidden="true"></i> Online: <span id="following"></span></h4>
+      </div>
+    <div class="col-md-6" id="orderSection">
+      <h2>Order by <div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked><i class="fa fa-eye" aria-hidden="true"></i></label>
+  <label class="btn btn-default">
+    <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></label></h2>
     </div>
-    </form>
+    </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
   </body>
 </html>

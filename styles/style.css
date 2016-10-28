@@ -1,10 +1,45 @@
 body{
-  text-align: center;
+
 }
-input{
-  margin: 10px 10px 10px 10px;
+div.container{
+  margin-top: 20px;
+}
+div.row{
+}
+img[alt="twitch logo"]{
+  display:block;
+  margin: 0 auto;
+  width:350px;
 }
 
-form{
-  margin: 0 auto;
+img.twitch-connect{
+
+  cursor: pointer;
+}
+
+h1, h2{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h4{
+  font-family: 'Rokkitt', serif;
+}
+
+#basicInfo{
+  text-align: center;
+}
+#orderSection{
+text-align: center;
+}
+#userImage{
+  margin-bottom: 10px;
+  align:bottom;
+  width: 30px;
+}
+
+#loginSection{
+  text-align: center;
+margin-top: 20px;
+font-size: 30px;
+font-family: 'Rokkitt', serif;
 }
