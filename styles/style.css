@@ -1,45 +1,85 @@
 body{
 
+
 }
 div.container{
   margin-top: 20px;
 }
-div.row{
+div.info{
+  text-align: right;
 }
+
 img[alt="twitch logo"]{
   display:block;
   margin: 0 auto;
   width:350px;
 }
+img[alt="twitchThumbnail"]{
+
+  width: 320px;
+  height: 180px;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: #6441A5;
+}
 
 img.twitch-connect{
-
   cursor: pointer;
 }
 
-h1, h2{
+h1, h2,{
   font-family: 'Ubuntu', sans-serif;
 }
 
-h4{
+h3, h4{
   font-family: 'Rokkitt', serif;
 }
 
-#basicInfo{
-  text-align: center;
+#listOfChannels{
+margin-left: 0 auto;
+margin-right: 0 auto;
+text-align: left;
+}
+
+
+#userInfo{
+  margin-top: 40px;
+  text-align: left;
 }
 #orderSection{
-text-align: center;
+margin-top: 70px;
+vertical-align: bottom;
+text-align: right;
 }
-#userImage{
+
+#userImage, img[alt='channelLogo']{
   margin-bottom: 10px;
   align:bottom;
   width: 30px;
 }
 
 #loginSection{
-  text-align: center;
+text-align: center;
 margin-top: 20px;
 font-size: 30px;
 font-family: 'Rokkitt', serif;
+}
+
+@media (max-width: 991px){
+  #userInfo{
+    text-align: center;
+  }
+  #orderSection{
+  vertical-align: bottom;
+  text-align: center;
+  }
+  div.info{
+    text-align: center;
+  }
+  #listOfChannels{
+    text-align: center;
+  }
+
 }
