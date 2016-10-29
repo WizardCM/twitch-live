@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -21,24 +20,26 @@
             </div>
             <div class="col-md-6" id="loginSection">
                 <h1>Twitch-live <span style="font-size: 15px;">by Forgoroe</span></h1>
-                <p>The up-to-date list of the channels you follow.</p>
-                <img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" hidden/>
-                <button class="btn btn-default btn-md" id="logout">Log out</button>
+                <p>The up-to-date list of Twitch channels you follow.</p>
+                <img src="https://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" />
+                <span id="logout" hidden><button class="btn btn-default btn-md" >Log out</button></span>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-offset-1" id="userInfo">
-                <h2><img src="http://res.cloudinary.com/forgoroe/image/upload/c_scale,w_30/v1477685258/logos/Twitch-Icon.png" alt="" id="userImage"> <span id="user"></span></h2>
-                <h4><i class="fa fa-heart fa-lg" aria-hidden="true"></i> Online channels: <span id="following"></span></h4>
+            <div class="col-md-5 col-md-offset-1" id="userInfo" hidden>
+                <h2><img src="#" alt="" id="userImage"> <span id="user"></span></h2>
+                <h3><i class="fa fa-heart fa-lg" aria-hidden="true"></i> Live channels: <span id="following"></span></h3>
             </div>
-            <div class="col-md-6" id="orderSection">
+            <div class="col-md-6" id="orderSection" hidden>
                 <h2>Order channels <div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-default active">
+    <input type="radio" name="options" id="byViewCount" value="viewCount" autocomplete="off" checked="checked"><i class="fa fa-eye" aria-hidden="true"></i>
+  </label>
   <label class="btn btn-default">
-    <input type="radio" name="options" id="byViewCount" autocomplete="off" checked><i class="fa fa-eye" aria-hidden="true"></i></label>
-  <label class="btn btn-default">
-    <input type="radio" name="options" id="byName" autocomplete="off"> <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></label></h2>
+    <input type="radio" name="options" id="byName" value="channelName" autocomplete="off"> <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+  </label></h2>
             </div>
         </div>
     </div>
