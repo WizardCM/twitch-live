@@ -8,9 +8,6 @@ window.onload = function() {
         if (error) {
             return console.log(error);
         }
-        setInterval(function() {
-            requestChannels();
-        }, 30000);
         requestChannels();
     });
 
@@ -42,6 +39,7 @@ window.onload = function() {
             }, function(error, streams) {
                 organiseData(true, streams, byOrder, function(dataNeeded) {
                     displayList(true, userInfo, dataNeeded);
+					setTimeout(requestChannels, 30000);
                 });
             });
         });
