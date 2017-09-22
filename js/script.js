@@ -1,6 +1,6 @@
 window.onload = function() {
     var sortOrder = 'byViewCount';
-    var CLIENT_ID = 'arni47763m6bx3atc5gnhcpnyfh40m9';
+    var CLIENT_ID = 'rsb85gw7of8h3n90qtd1e04qswuhnn';
 
     Twitch.init({
         clientId: CLIENT_ID
@@ -42,6 +42,9 @@ window.onload = function() {
                 });
             });
         });
+        setInterval(function() {
+            requestChannels();
+        }, 30000);
     }
     $('.twitch-connect').click(function() {
         Twitch.login({
