@@ -50,11 +50,9 @@ text-align: left;
 
 #userInfo{
   font-family: monospace;
-  margin-top: 40px;
   text-align: left;
 }
 #orderSection{
-margin-top: 70px;
 vertical-align: bottom;
 text-align: right;
 }
