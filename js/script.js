@@ -8,6 +8,9 @@ window.onload = function() {
         if (error) {
             return console.log(error);
         }
+        setInterval(function() {
+            requestChannels();
+        }, 30000);
         requestChannels();
     });
 
@@ -42,9 +45,6 @@ window.onload = function() {
                 });
             });
         });
-        setInterval(function() {
-            requestChannels();
-        }, 30000);
     }
     $('.twitch-connect').click(function() {
         Twitch.login({
