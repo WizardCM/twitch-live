@@ -10,8 +10,7 @@ img[alt="twitch logo"] {
     width: 350px;
 }
 img[alt="twitchThumbnail"] {
-    width: 320px;
-    height: 180px;
+    width: 240px;
 }
 div.list-group-item {
     padding-bottom: 0px;
