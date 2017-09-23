@@ -1,108 +1,103 @@
-div.container{
-  margin-top: 0px;
+div.container {
+    margin-top: 0px;
 }
-div.info{
-  text-align: left;
+div.info {
+    text-align: left;
 }
-
-img[alt="twitch logo"]{
-  display:block;
-  margin: 0 auto;
-  width:350px;
+img[alt="twitch logo"] {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
 }
-img[alt="twitchThumbnail"]{
-
-  width: 320px;
-  height: 180px;
+img[alt="twitchThumbnail"] {
+    width: 320px;
+    height: 180px;
 }
-
-div.list-group-item{
-  padding-bottom: 0px;
+div.list-group-item {
+    padding-bottom: 0px;
 }
-div.preview{
-  padding: 0px;
-  text-align: center;
+div.preview {
+    padding: 0px;
+    text-align: center;
 }
-
-a, a:hover{
-  text-decoration: none;
-  color: #6441A5;
+a,
+a:hover {
+    text-decoration: none;
+    color: #6441A5;
 }
-
-img.twitch-connect{
-  cursor: pointer;
+img.twitch-connect {
+    cursor: pointer;
 }
-
-h1, h2,{
-  font-family: 'Ubuntu', sans-serif;
+h1,
+h2,
+{
+    font-family: 'Ubuntu', sans-serif;
 }
-
-h3, h4{
-  font-family: 'Rokkitt', serif;
+h3,
+h4 {
+    font-family: 'Rokkitt', serif;
 }
-
-#listOfChannels{
-margin-left: 0 auto;
-margin-right: 0 auto;
-text-align: left;
+#listOfChannels {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: left;
 }
-
-
-#userInfo{
-  font-family: monospace;
-  text-align: left;
+#userInfo {
+    font-family: monospace;
+    text-align: left;
 }
-#orderSection{
-vertical-align: bottom;
-text-align: right;
+#orderSection {
+    vertical-align: bottom;
+    text-align: right;
 }
-
-#userImage, img[alt='channelLogo']{
-  width: 24px;
+#userImage,
+img[alt='channelLogo'] {
+    width: 24px;
     vertical-align: middle;
-    margin-bottom:4px
+    margin-bottom: 4px
 }
-
-#loginSection > h1{
-  padding-left:1.5em;
+#loginSection > h1 {
+    padding-left: 1.5em;
 }
-
-#loginSection{
-text-align: center;
-margin-top:20px;
-font-size: 30px;
-font-family: 'Rokkitt', serif;
-}
-
-@media (max-width: 991px){
-  #userInfo{
+#loginSection {
     text-align: center;
     margin-top: 20px;
-  }
-  #loginSection{
-    margin-top: 30px;
-  }
-  #orderSection{
-  vertical-align: bottom;
-  text-align: center;
-  }
-  div.info{
-    text-align: center;
-  }
-  #listOfChannels{
-    text-align: center;
-  }
-
+    font-size: 30px;
+    font-family: 'Rokkitt', serif;
 }
-
-html, body, .row.list-group-item, a, .btn. h1, h2, h3, h4 {
+@media (max-width: 991px) {
+    #userInfo {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #loginSection {
+        margin-top: 30px;
+    }
+    #orderSection {
+        vertical-align: bottom;
+        text-align: center;
+    }
+    div.info {
+        text-align: center;
+    }
+    #listOfChannels {
+        text-align: center;
+    }
+}
+html,
+body,
+.row.list-group-item,
+a,
+.btn. h1,
+h2,
+h3,
+h4 {
     color: #a7a7a7 !important;
     background: #3a3a3a !important;
     border: transparent !important;
     font-family: Arial, serif !important;
     font-weight: bold !important;
 }
-
 span#logout {
     position: fixed;
     bottom: 0;
@@ -110,7 +105,9 @@ span#logout {
     width: 90px;
     z-index: 50;
 }
-
-h1, h2, h3, h4 {
-  margin: 0 !important;
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 !important;
 }
