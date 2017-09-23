@@ -142,10 +142,10 @@ window.onload = function() {
         for (var i = 0; i < dataNeeded.length; i++) {
             $('#listOfChannels')
                 .append('<div class="row list-group-item">' +
-                    '<div class="col-xs-5 preview">' +
+                    '<div class="col-xs-3 preview">' +
                     '<a href="' + dataNeeded[i].url + '"target="_blank" class="list-group-item-heading"><img src="' + dataNeeded[i].preview + '" alt="twitchThumbnail"></a>' +
                     '</div>' +
-                    '<div class="col-sx-7 info">' +
+                    '<div class="col-sx-9 info">' +
                     '<a href="' + dataNeeded[i].url + '"target="_blank""><h2><img src="' + dataNeeded[i].channelLogo + '" alt="channelLogo">  ' + dataNeeded[i].name + '</h2></a>' +
                     '<p class="list-group-item-text">' + dataNeeded[i].status + '</p>' +
                     '<h3>' + dataNeeded[i].game + ' to ' + dataNeeded[i].viewers + '</h3>' +
