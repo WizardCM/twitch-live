@@ -10,7 +10,7 @@ img[alt="twitch logo"] {
     width: 350px;
 }
 img[alt="twitchThumbnail"] {
-    width: 240px;
+    width: 200px;
 }
 div.list-group-item {
     padding-bottom: 0px;
@@ -64,6 +64,34 @@ img[alt='channelLogo'] {
     font-size: 30px;
     font-family: 'Rokkitt', serif;
 }
+html,
+body,
+.list-group-item,
+a,
+.btn,
+h2,
+h3,
+h4 {
+    color: #a7a7a7 !important;
+    background: #3a3a3a !important;
+    border: transparent !important;
+    font-family: 'Arial', serif !important;
+    font-weight: bold !important;
+}
+span#logout {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    z-index: 50;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 !important;
+}
+
 @media (max-width: 991px) {
     #userInfo {
         text-align: center;
@@ -82,31 +110,4 @@ img[alt='channelLogo'] {
     #listOfChannels {
         text-align: center;
     }
-}
-html,
-body,
-.row.list-group-item,
-a,
-.btn. h1,
-h2,
-h3,
-h4 {
-    color: #a7a7a7 !important;
-    background: #3a3a3a !important;
-    border: transparent !important;
-    font-family: Arial, serif !important;
-    font-weight: bold !important;
-}
-span#logout {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 90px;
-    z-index: 50;
-}
-h1,
-h2,
-h3,
-h4 {
-    margin: 0 !important;
 }
