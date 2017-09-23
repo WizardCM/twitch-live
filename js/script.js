@@ -1,5 +1,5 @@
 window.onload = function() {
-    var sortOrder = 'byViewCount';
+    var sortOrder = 'byName';
     var CLIENT_ID = 'rsb85gw7of8h3n90qtd1e04qswuhnn';
 
     Twitch.init({
